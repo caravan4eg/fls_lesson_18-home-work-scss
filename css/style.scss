@@ -1,0 +1,114 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+@import "_null";
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue.woff2") format("woff2"), url("../fonts/HelveticaNeue.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeue-CondensedBlack.woff2") format("woff2"), url("../fonts/HelveticaNeue-CondensedBlack.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url("../fonts/HelveticaNeueBoldCondensed.woff2") format("woff2"), url("../fonts/HelveticaNeueBoldCondensed.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Helvetica thin';
+  src: url("../fonts/HelveticaNeue-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeue-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  line-height: 1;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #1A1A1A;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+@import "_header";
+@import "_order";
+@import "_how-it-works";
+@import "_footer";
+
+._ibg {
+	position: relative;
+	img {
+		object-fit: cover;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+// Миксин IBG
+@mixin ibg($position: center) {
+	position: relative;
+	img {
+		object-fit: cover;
+		object-position: $position;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+	}
+}
+
+[class*="__container"] {
+	max-width: 1140px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+/* №1 */
+@media (max-width: 1140px) {
+	[class*="__container"] {
+		max-width: 970px;
+	}
+}
+/* №2 */
+@media (max-width: 991.98px) {
+	[class*="__container"] {
+		max-width: 750px;
+	}
+}
+/* №3 */
+@media (max-width: 767.98px) {
+	[class*="__container"] {
+		max-width: none;
+	}
+}
+
+

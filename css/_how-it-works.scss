@@ -1,0 +1,131 @@
+.how-it-works {
+	display: flex;
+	// padding: 2.5rem 0px 0px 0px;
+	flex-direction: column;
+	background-color: #000;
+
+	// .how-it-works__items
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+	}
+
+	// .how-it-works__item
+	&__item {
+		margin: 15px 15px;
+		// border: 2px solid black;
+		flex: 1 0 22%;
+		row-gap: 15px;
+		min-width: 150px;
+	}
+}
+
+// заголовок
+.head-card {
+	border-radius: 6px;
+	background-color: #000;
+	position: relative;
+	justify-content: center;
+	text-align: center;
+
+	// .head-card__content
+	&__content {
+	}
+
+	// .head-card__upcoming
+	&__upcoming {
+		font-style: normal;
+		font-weight: 900;
+		font-size: 5.5rem;
+		line-height: 1.5;
+		text-align: center;
+		letter-spacing: 0.2em;
+		color: #303030;
+	}
+
+	&__upcoming::before {
+		content: attr(data-title) " ";
+		position: absolute;
+		// центрировать абсолютный элемент
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+		display: inline-block;
+		font-weight: 400;
+		font-size: 2.25rem;
+		line-height: 2.5;
+		text-align: center;
+		letter-spacing: 0.2em;
+		text-transform: capitalize;
+		color: #d9d9d9;
+	}
+	&__upcoming::after {
+		content: "";
+		position: absolute;
+		display: inline-block;
+		height: 2px;
+		width: 60px;
+		transform: translate(-50%, -50%);
+		top: 85%;
+		left: 50%;
+		border-bottom: 2px solid #34c759;
+	}
+}
+
+// карточки
+.item-how-it-works {
+	// .item-how-it-works__body
+	&__body {
+		padding: 24px;
+		height: 100%;
+		background: #252525;
+		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+		border-radius: 6px;
+		transition: all 0.3s ease;
+	}
+
+	// .item-how-it-works__title
+	&__title {
+		position: relative;
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 26px;
+		letter-spacing: -0.275px;
+		text-transform: capitalize;
+		margin: 0px 0px 36px 0px;
+		color: #ffffff;
+		transition: all 0.3s ease;
+	}
+	&__title::after {
+		content: "";
+		position: absolute;
+		display: inline-block;
+		height: 2px;
+		width: 40px;
+		bottom: -50%;
+		left: 0px;
+		border-bottom: 2px solid #34c759;
+	}
+
+	// .item-how-it-works__text
+	&__text {
+		font-weight: 400;
+		font-size: 13px;
+		line-height: 1.38;
+		letter-spacing: -0.1625px;
+		color: rgba(255, 255, 255, 0.5);
+		transition: all 0.3s ease;
+	}
+	&__body:hover {
+		background: #34c759;
+		.item-how-it-works__text,
+		.item-how-it-works__title {
+			color: #191919;
+		}
+		.item-how-it-works__title::after {
+			border-bottom: 2px solid #191919;
+	}
+	
+	}
+}
