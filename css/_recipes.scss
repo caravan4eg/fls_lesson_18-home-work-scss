@@ -37,6 +37,19 @@
 		font-size: 12px;
 		line-height: 2.5;
 		color: #d8d8d8;
+		position: relative;
+		padding: 0px 0px 0px 20px;
+		&::before {
+			content: "";
+			height: 15px;
+			width: 15px;
+			position: absolute;
+			left: 0px;
+			top: 6px;
+			border-radius: 50%;
+			background-color: #fff;
+			display: block;
+		}
 	}
 	// .recipes__messages
 	&__messages {
@@ -44,6 +57,19 @@
 		font-size: 12px;
 		line-height: 2.5;
 		color: #d8d8d8;
+		position: relative;
+		padding: 0px 0px 0px 20px;
+		&::before {
+			content: "";
+			height: 15px;
+			width: 15px;
+			position: absolute;
+			left: 0px;
+			top: 6px;
+			border-radius: 50%;
+			background-color: #fff;
+			display: block;
+		}
 	}
 }
 
@@ -54,15 +80,41 @@
 	font-size: 12px;
 	line-height: 2.5;
 	color: #ffffff;
+
 	// .recipes-footer__users
 	&__users {
 		margin: 0px 30px 0px 0px;
+		position: relative;
+		padding: 0px 0px 0px 20px;
+		&::before {
+			content: "";
+			height: 15px;
+			width: 15px;
+			position: absolute;
+			left: 0px;
+			top: 6px;
+			border-radius: 50%;
+			background-color: #fff;
+			display: block;
+		}
 	}
 	// .recipes-footer__messages
 	&__messages {
+		position: relative;
+		padding: 0px 0px 0px 20px;
+		&::before {
+			content: "";
+			height: 15px;
+			width: 15px;
+			position: absolute;
+			left: 0px;
+			top: 6px;
+			border-radius: 50%;
+			background-color: #fff;
+			display: block;
+		}
 	}
 }
-
 
 .left-item {
 	background-color: grey;
@@ -73,6 +125,11 @@
 	padding: 60px 90px;
 	text-align: center;
 	height: 100%;
+	transition: all 0.3s ease 0s;
+	
+	&:hover {
+		background: linear-gradient(180deg, rgba(#34c759, .5) 0%, rgba(#34c759, .5) 100%), url("../img/recipes/main-recipe-bg.jpg") center / cover no-repeat rgba(38, 38, 38, 0.1) ;
+	}
 
 	// .left-item__data
 	&__data {
@@ -137,8 +194,6 @@
 	border-radius: 6px;
 	padding: 30px;
 	align-items: center;
-	text-align: center;
-	justify-content: center;
 	transition: all 0.3s ease 0s;
 
 	&:hover {
@@ -148,6 +203,10 @@
 		.recipes__messages,
 		.recipes__data {
 			color: #191919;
+		}
+		.recipes__messages::before,
+		.recipes__users::before {
+			background-color: #191919;
 		}
 	}
 	&_second {

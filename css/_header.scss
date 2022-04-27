@@ -43,8 +43,9 @@
 		color: #ffffff;
 		
 		// .menu__link_active
-		&_active {
+		&:hover{
 			color: #34c759;
+			text-decoration: underline;
 		}
 	}
 }
