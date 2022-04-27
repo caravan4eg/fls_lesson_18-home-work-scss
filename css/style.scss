@@ -41,7 +41,8 @@
 body {
 	line-height: 1;
 	font-family: "Helvetica Neue", sans-serif;
-	background: #1a1a1a;
+		background: #1A1A1A;
+
 	color: rgba(255, 255, 255, 0.5);
 	font-weight: 400;
 }
@@ -60,7 +61,8 @@ body {
 @import "_order";
 @import "_how-it-works";
 @import "_dishes";
-@import "recipes";
+@import "_recipes";
+@import "_footer";
 
 ._ibg {
 	position: relative;

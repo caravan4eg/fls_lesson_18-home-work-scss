@@ -2,7 +2,8 @@
 	display: flex;
 	// padding: 2.5rem 0px 0px 0px;
 	flex-direction: column;
-	background-color: #000;
+		background: #1A1A1A;
+
 
 	// .how-it-works__items
 	&__items {
@@ -24,7 +25,8 @@
 // заголовок
 .head-card {
 	border-radius: 6px;
-	background-color: #000;
+		background: #1A1A1A;
+
 
 	&__content {
 		display: flex;

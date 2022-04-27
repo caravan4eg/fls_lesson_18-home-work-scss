@@ -10,19 +10,18 @@
 	&__item {
 		flex: 0 1 33.333%;
 		padding: 0 15px;
-		
 	}
 }
 .item-dishes {
 	display: flex;
 	flex-direction: column;
-	background: #252525;
+	background: #1A1A1A;;
 	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 	border-radius: 0px 0px 6px 6px;
 	transition: all 0.3s ease-in-out;
-			&:hover {
-			box-shadow: 2px 2px 20px #34c759;
-		}
+	&:hover {
+		box-shadow: 2px 2px 20px #34c759;
+	}
 
 	// .item-dishes__picture
 	// -------------------------------
@@ -49,7 +48,6 @@
 	// отзывчивая картинка
 	// -------------------------------
 	// -------------------------------
-
 
 	// .item-dishes__body
 	&__body {
@@ -86,7 +84,6 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		
 	}
 	// .item-dishes__rating
 	&__rating {

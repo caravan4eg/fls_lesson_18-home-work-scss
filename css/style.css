@@ -87,7 +87,7 @@ html {
 body {
   line-height: 1;
   font-family: "Helvetica Neue", sans-serif;
-  background: #1a1a1a;
+  background: #1A1A1A;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 400;
 }
@@ -360,7 +360,7 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #000;
+  background: #1A1A1A;
 }
 
 .how-it-works__items {
@@ -387,7 +387,7 @@ body {
 .head-card {
   -webkit-border-radius: 6px;
           border-radius: 6px;
-  background-color: #000;
+  background: #1A1A1A;
 }
 
 .head-card__content {
@@ -579,7 +579,7 @@ body {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #252525;
+  background: #1A1A1A;
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   -webkit-border-radius: 0px 0px 6px 6px;
@@ -690,6 +690,11 @@ body {
 .item-dishes__button:hover {
   background: #34c759;
   color: #252525;
+}
+
+.recipes {
+  background: #1A1A1A;
+  margin: 0px 0px 35px 0px;
 }
 
 .recipes__items {
@@ -978,6 +983,12 @@ body {
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.footer__text {
+  line-height: 1;
+  text-align: center;
+  margin: 0px 0px 25px 0px;
 }
 
 ._ibg {
